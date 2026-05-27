@@ -1,4 +1,222 @@
 {
+  "2026-04-08": {
+    "version": "2.0.37",
+    "messagesKeyModify": false,
+    "changeLog": [
+      "更新next-mdx-remote版本到6.0.0"
+    ],
+    "modify": [
+      "package.json"
+    ]
+  },
+  "2025-12-10": {
+    "version": "2.0.36",
+    "messagesKeyModify": false,
+    "changeLog": [
+      "更新react版本到19.2.1，nextjs版本到:15.3.6 漏洞 cve-2025-55182"
+    ],
+    "modify": [
+      "package.json"
+    ]
+  },
+  "2025-11-20": {
+    "version": "2.0.35",
+    "messagesKeyModify": false,
+    "changeLog": [
+      "更新react版本到19.2.0，解决react-konva版本不兼容问题"
+    ],
+    "modify": [
+      "package.json"
+    ]
+  },
+    "2025-06-26 2": {
+        "version": "2.0.34",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复博客页面第一次访问样式显示不正确问题,修复Vercel部署后依然不正确问题"
+        ],
+        "modify": [
+            "app/[locale]/(public)/blogs/[[...page]]/page.tsx",
+            "lib/components/navbar.tsx"
+        ]
+    },
+    "2025-06-26": {
+        "version": "2.0.33",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复博客页面第一次访问样式显示不正确问题"
+        ],
+        "modify": [
+            "app/[locale]/(public)/blogs/[[...page]]/page.tsx",
+            "lib/components/locale-dropdown.tsx"
+        ],
+        "add": [
+            "lib/components/blogs/ArticleList.tsx"
+        ]
+    },
+    "2025-05-12": {
+        "version": "2.0.32",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "防止游戏地址为空或者游戏类型是下载游戏页面时，导致页面自动滚动的问题"
+        ],
+        "modify": [
+            "app/[locale]/(public)/views/LazyIframe.tsx"
+        ]
+    },
+    "2025-04-24 16": {
+        "version": "2.0.31",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "强制博客列表页面和文章页面为静态生成,避免mdx内容有误导致运行时提示404"
+        ],
+        "modify": [
+            "app/[locale]/(public)/blogs/[[...page]]/page.tsx",
+            "app/[locale]/(public)/t/page.tsx"
+        ]
+    },
+    "2025-04-24": {
+        "version": "2.0.30",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "优化404和错误页面"
+        ],
+        "modify": [
+            "app/[locale]/(public)/not-found.tsx",
+            "app/[locale]/(public)/error.tsx",
+            "app/global-error.tsx",
+            "app/not-found.tsx"
+        ]
+    },
+    "2025-04-21 17": {
+        "version": "2.0.29",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复游戏列表页面的链接会多出一个语言的问题"
+        ],
+        "modify": [
+            "app/[locale]/(public)/games/page.tsx"
+        ]
+    },
+    "2025-04-21": {
+        "version": "2.0.28",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "还原tailwindcss版本到3.4.17",
+            "修改 PostCSS 配置",
+            "移除 bun.lockb 文件"
+        ],
+        "modify": [
+            "package.json",
+            "postcss.config.js"
+        ],
+        "delete": [
+            "bun.lockb"
+        ]
+    },
+    "2025-04-19": {
+        "version": "2.0.27",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "更新项目依赖和配置文件",
+            "迁移 postcss 配置到新格式"
+        ],
+        "modify": [
+            "package.json",
+            "tailwind.config.ts"
+        ],
+        "delete": [
+            "postcss.config.mjs"
+        ],
+        "add": [
+            "postcss.config.js"
+        ]
+    },
+    "2025-04-15": {
+        "version": "2.0.26",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "优化多个页面组件，去掉fore-static标识",
+            "删除不再使用的文件",
+            "更新nextjs版本到最新15.3.0"
+        ],
+        "modify": [
+            "app/[locale]/(public)/blogs/[[...page]]/page.tsx",
+            "app/[locale]/(public)/games/page.tsx",
+            "app/[locale]/(public)/privacy-policy/page.tsx",
+            "app/[locale]/(public)/t/page.tsx",
+            "app/[locale]/(public)/terms-of-services/page.tsx",
+            "lib/components/games-template/c/[[...]]/page.tsx",
+            "lib/components/games-template/game-box.tsx",
+            "lib/utils/index.ts",
+            "package.json"
+        ],
+        "delete": [
+            "lib/utils/handle-errors.ts"
+        ]
+    },
+    "2025-04-14": {
+        "version": "2.0.25",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复单游戏模板下iframe区域没有显示广告内容的问题"
+        ],
+        "modify": [
+            "app/[locale]/(public)/page.tsx"
+        ]
+    },
+    "2025-04-13": {
+        "version": "2.0.24",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复自定义header内容，无法插入script标签的问题，改为支持插入任意内容"
+        ],
+        "modify": [
+            "app/layout.tsx",
+            "app/[locale]/(public)/layout.tsx"
+        ]
+    },
+    "2025-04-12": {
+        "version": "2.0.23",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "增加自定义header内容，支持插入任意script标签",
+            "游戏的iframe上下，右侧推荐游戏的位置增加自定义内容，可以插入google adsense广告代码单元"
+        ],
+        "modify": [
+            "app/[locale]/(public)/layout.tsx",
+            "app/[locale]/(public)/views/GameRecommendationCard.tsx",
+            "lib/components/games-template/page.tsx",
+            "lib/types/site.ts"
+        ],
+        "add": [
+            "lib/components/slot/iframe-bottom-slot.tsx",
+            "lib/components/slot/iframe-top-slot.tsx",
+            "lib/components/slot/recommend-bottom-slot.tsx",
+            "lib/components/slot/recommend-top-slot.tsx"
+        ]
+    },
+    "2025-03-26 18": {
+        "version": "2.0.22",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复游戏详情页面获取游戏截图的方式不正确的问题"
+        ],
+        "modify": [
+            "app/[locale]/(public)/games/page.tsx",
+            "app/[locale]/(public)/views/IframeSection.tsx"
+        ]
+    },
+    "2025-03-25": {
+        "version": "2.0.21",
+        "messagesKeyModify": false,
+        "changeLog": [
+            "修复盒子游戏首页推荐游戏其他语言获取不正确的问题"
+        ],
+        "modify": [
+            "lib/utils/game-box-settings.ts"
+        ]
+    },
     "2025-02-26 17": {
         "version": "2.0.20",
         "messagesKeyModify": false,
